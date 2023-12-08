@@ -6,52 +6,45 @@
 Project Organization
 ------------
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
+    ├── README.md          <- Główny plik README dla osób korzystających z tego projektu.
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    │   ├── external       <- Dane z zewnętrznych źródeł.
+    │   ├── interim        <- Dane pośrednie, które zostały przekształcone.
+    │   ├── processed      <- Ostateczne zestawy danych do modelowania.
+    │   └── raw            <- Oryginalny, niezmienialny zrzut danych.
     │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    ├── models             <- Wytrenowane i zserjalizowane modele, predykcje modelu lub podsumowania modelu.
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── notebooks          <- Notatniki Jupyter. Konwencja nazewnictwa to numer (do sortowania)
+    │                         i krótki opis oddzielony myślnikami, np. `1.0-initial-data-exploration`.
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    ├── references         <- Treści zadań, opisy danych i wszelkie inne materiały.
     │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    ├── reports            <- Wygenerowane raporty, analizy w formie HTML, PDF, LaTeX itp.
+    │    └── figures             <- Wygenerowane grafiki i figury do użycia w raportach.
     │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    ├── requirements.txt   <- Plik wymagań do odtworzenia środowiska analizy, np.
+    │                         wygenerowany poleceniem `pip freeze > requirements.txt`
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
+    ├── results            <- Wyniki eksperymentów w formacie CSV.
     │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
+    └── src                <- Kod źródłowy do użycia w tym projekcie.
+        ├── __init__.py    <- Czyni src modułem Pythona
+        │
+        ├── data           <- Skrypty do pobierania lub generowania danych
+        │    └── make_dataset.py
+        │
+        ├── features       <- Skrypty do przekształcania surowych danych na cechy do modelowania
+        │    └── build_features.py
+        │
+        ├── models         <- Skrypty do trenowania modeli, a następnie używania wytrenowanych modeli do predykcji
+        │    │   
+        │    ├── predict_model.py
+        │    └── train_model.py
+        │
+        └── visualization  <- Skrypty do tworzenia eksploracyjnych i wynikowych wizualizacji
+             └── visualize.py
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+<p><small>Project oparty na <a target="_blank" href="https://github.com/mateuszdorobek/cookiecutter-data-science/">szablonie cookiecutter dla projektów data science</a></small></p>
