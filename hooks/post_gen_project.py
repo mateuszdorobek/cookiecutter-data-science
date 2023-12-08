@@ -36,5 +36,5 @@ def move_directory_contents(src: PurePath, dst: PurePath):
 
 if __name__ == "__main__":
     src = Path.cwd()
-    assert src.name == "{{ cookiecutter.project_slug }}"
+    assert src.name == "{{ cookiecutter.repo_name }}"
     move_directory_contents(src, src.parent)
