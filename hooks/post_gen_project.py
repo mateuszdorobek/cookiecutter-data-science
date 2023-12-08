@@ -23,6 +23,10 @@ def move_directory_contents(src: PurePath, dst: PurePath):
         print(f"Moving {item} to {temp_dir_path}")
         _move_single_file(src, temp_dir_path, item)
 
+    print(f"{src=}")
+    print(f"{directory_contents=}")
+    print(f"{src.name=}")
+
     directory_contents.remove(src.name)
 
     for item in directory_contents:
